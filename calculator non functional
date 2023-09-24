@@ -1,0 +1,180 @@
+from tkinter import *
+
+window = Tk()
+window.title('Calculadora')
+window.resizable(False, False)
+
+
+display = Entry(
+    master=window,
+    state='readonly',
+    justify='right',
+    font=('Arial', 80),
+    width=5,
+    fg='#e97037',
+)
+display.grid(row=0, column=0, columnspan=4)
+
+botao7 = Button(
+    text='7',
+    font=('Arial', 16),
+    height=2,
+    background= '#e2725b',
+    activebackground='#c65038',
+    cursor='sete',
+    
+)
+botao7.grid(row=1, column=0, sticky=EW)
+
+
+botao8 = Button(
+    text='8',
+    font=('Arial', 16),
+    height=2,
+    background= '#e2725b',
+    activebackground='#c65038',
+)
+botao8.grid(row=1, column=1, sticky=EW)
+
+
+botao9 = Button(
+    text='9',
+    font=('Arial', '16'),
+    height=2,
+    background= '#e2725b',
+    activebackground='#c65038',
+)
+botao9.grid(row=1, column=2, sticky=EW)
+
+
+botaominus = Button(
+    text='-',
+    font=('Arial', '16'),
+    height=2,
+    background= '#f2bfab',
+    activebackground= '#ffa07a',
+
+)
+botaominus.grid(row=1, column=3, sticky=EW)
+
+
+botao4 = Button(
+    text='4',
+    font=('Arial', '16'),
+    height=2,
+    background= '#e2725b',
+    activebackground= '#c65038'
+)
+botao4.grid(row=2, column=0, sticky=EW)
+
+
+botao5 = Button(
+    text='5',
+    font=('Arial', '16'),
+    height=2,
+    background= '#e2725b',
+    activebackground= '#c65038'
+)
+botao5.grid(row=2, column=1, sticky=EW)
+
+
+botao6 = Button(
+    text='6',
+    font=('Arial', '16'),
+    height=2,
+    bg='#e2725b',
+    activebackground='#c65038'
+)
+botao6.grid(row=2, column=2, sticky=EW)
+
+
+botaoplus = Button(
+    text='+',
+    font=('Arial', '16'),
+    height=2,
+    bg='#f2bfab',
+    activebackground='#ffa07a'
+)
+botaoplus.grid(row=2, column=3, sticky=EW)
+
+
+botao3 = Button(
+    text='3',
+    font=('Arial', '16'),
+    height=2,
+    bg='#e2725b',
+    activebackground='#c65038'
+)
+botao3.grid(row=3, column=0, sticky=EW)
+
+
+botao2 = Button(
+    text='2',
+    font=('Arial', '16'),
+    height=2,
+    bg='#e2725b',
+    activebackground='#c65038'
+)
+botao2.grid(row=3, column=1, sticky=EW)
+
+
+botao1 = Button(
+    text='1',
+    font=('Arial', '16'),
+    height=2,
+    bg='#e2725b',
+    activebackground='#c65038'
+)
+botao1.grid(row=3, column=2, sticky=EW)
+
+
+botaodiv = Button(
+    text='/',
+    font=('Arial', '16'),
+    height=2,
+    bg='#f2bfab',
+    activebackground='#ffa07a'
+)
+botaodiv.grid(row=3, column=3, sticky=EW)
+
+
+botao_limpar = Button(
+
+    master= window,
+    text='C',
+    font=('Arial', 16, 'bold'),
+    height=2,
+    bg='#f0dcd2',
+    activebackground='#ffa07a',
+)
+botao_limpar.grid(row=4, column=0, sticky=EW)
+
+
+botao0 = Button(
+    text='0',
+    font=('Arial', '16'),
+    height=2,
+    bg='#e2725b',
+    activebackground='#c65038',
+)
+botao0.grid(row=4, column=1, sticky=EW)
+
+botao_igual = Button(
+    text='=',
+    font=('Arial', '16'),
+    height=2,
+    bg='#f2bfab',
+    activebackground='#ffa07a',
+)
+botao_igual.grid(row=4, column=2, sticky=EW)
+
+botao_multi = Button(
+    text='*',
+    font=('Arial', '16'),
+    height=2,
+    bg='#f2bfab',
+    activebackground='#ffa07a',
+)
+botao_multi.grid(row=4, column=3, sticky=EW)
+
+window.mainloop()
